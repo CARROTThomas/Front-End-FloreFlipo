@@ -82,7 +82,7 @@
     align-items: center;
 }
 .swiper-slide{
-    min-width: 25vw;
+    min-width: 30%;
     height: 50vh;
     display: flex;
     min-height: 70%;
