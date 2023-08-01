@@ -288,6 +288,13 @@ p {
     }
     /*  ##################################  */
     .texte-center-phone {text-align: center;}
+    .center-phone {
+        display: flex;
+        justify-content: center;
+    }
+    .bouton-phone {
+        width: 90%;
+    }
 
     .col-6 {width: 80%;}
     .col-4 {width: 80%;}
