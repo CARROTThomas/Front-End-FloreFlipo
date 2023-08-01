@@ -19,7 +19,7 @@
     --white: #fff;
     --grey: #3C414F;
 
-    --pink1: #FFF9FB;
+    --pink1: #fff9fb;
     --pink2: #FFE5EC;
     --pink3: #FFD2DE;
     --pink4: #ee396a;
@@ -148,6 +148,12 @@ p {
     border-radius: 25px;
     background-color: var(--pink2);
 }
+.titre-surligner {
+    padding: .5em;
+    font-size: 1.4em;
+    border-radius: 13px;
+    background-color: var(--pink2);
+}
 
 .uppercase {text-transform: uppercase;}
 
@@ -161,6 +167,10 @@ p {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+}
+.imgDecoration {
+    width: 200px;
+    height: 160px;
 }
 
 .imgComputerToPhone {
@@ -249,7 +259,9 @@ p {
     width: 79px;
 }
 
-
+.espacement-lettres {
+    letter-spacing: 2px;
+}
 
 
 
@@ -292,6 +304,7 @@ p {
         display: flex;
         justify-content: center;
     }
+
     .bouton-phone {
         width: 90%;
     }

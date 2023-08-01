@@ -13,9 +13,71 @@
     background-color: var(--pink4);
 }
 
+.section2Accueil {
+    background-color: var(--pink1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.containerSection2Accueil {
+    display: grid;
+    /* row / col */
+    grid-template: repeat(16, 4em) / repeat(10, 10%);
+}
+
+.element1Section2Accueil, .element2Section2Accueil, .element3Section2Accueil {
+    gap: 3em;
+    display: flex;
+    align-items: center;
+}
+
+.element1Section2Accueil {
+    grid-column: 3 / 9;
+    grid-row: 2 / 4;
+}
+
+.element2Section2Accueil {
+    grid-column: 3 / 9;
+    grid-row: 5 / 13;
+}
+
+.element3Section2Accueil {
+    grid-column: 3 / 9;
+    grid-row: 14 / 16;
+}
+
+.imageDecoSection2Accueil {
+    grid-column: 8 / 11;
+    grid-row: 15 / 17;
+}
+
+
+
+
+
+
+
+
+
+.iconCheckbox {
+    width: 40px;
+    height: 40px;
+}
 
 .section3Accueil {
     display: flex;
+    padding: 3em 0;
     align-items: center;
     justify-content: space-between;
     background-color: var(--white);
@@ -147,6 +209,44 @@
         align-items: center;
         justify-content: center;
     }
+
+
+
+
+
+    .containerSection2Accueil {
+        display: grid;
+        /* row / col */
+        grid-template: repeat(14, 10em) / repeat(10, 10%);
+    }
+    .element1Section2Accueil {
+        grid-column: 1 / 11;
+        grid-row: 2 / 4;
+    }
+
+    .element2Section2Accueil {
+        grid-column: 1 / 11;
+        grid-row: 4 / 12;
+    }
+
+    .element3Section2Accueil {
+        grid-column: 1 / 11;
+        grid-row: 12 / 14;
+    }
+    .iconCheckbox {
+        width: 50px;
+        height: 50px;
+    }
+
+
+
+
+
+
+
+
+
+
 
     .section3Accueil {
         gap: 5em;
