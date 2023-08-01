@@ -1,0 +1,310 @@
+/*  ################################################################################################  */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;700&display=swap');
+/*  ################################################################################################  */
+
+
+/*  #########################################################  */
+.logoIcon {background-image: url("../images/logos/icon.png");}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+}
+
+:root {
+    --text-multiplier: 1;
+    --icon-multiplier: 2;
+
+    --white: #fff;
+    --grey: #3C414F;
+
+    --pink1: #FFF9FB;
+    --pink2: #FFE5EC;
+    --pink3: #FFD2DE;
+    --pink4: #ee396a;
+    --pink5: #C4234E;
+}
+
+.color-white {color: var(--white)}
+.color-grey {color: var(--grey)}
+
+.color-pink1 {color: var(--pink1);}
+.color-pink2 {color: var(--pink2);}
+.color-pink3 {color: var(--pink3);}
+.color-pink4 {color: var(--pink4);}
+.color-pink5 {color: var(--pink5);}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: var(--pink1);
+}
+/*  #########################################################  */
+
+
+/*  ######  NAV BARRE + FOOTER  ######  */
+.navbar {background-color: var(--pink2);}
+.navbar{--bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28238, 57, 106, 100%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");}
+
+.footer {background-color: var(--grey);}
+
+#logoNavBarre, #logoFooter {
+    height: 6vh;
+    width: 130px;
+    background-image: url("../images/logos/logoNavBarre.png");
+}
+#logoFooter {background-image: url("../images/logos/logoFooter.png");}
+
+.footer-link, .nav-link {
+    user-select: none;
+}
+
+.contenueFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-link {color: var(--pink4);}
+.nav-link:hover {color: var(--pink4);}
+/*  ##################################  */
+
+/*##########  RÉSEAUX  ##########*/
+.arborescence {
+    padding: 1em 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.reseaux {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.inputReseaux {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    border-radius: 50%;
+    color: var(--pink4);
+    align-items: center;
+    justify-content: center;
+    background-color: var(--pink1);
+}
+.bi-linkedin {
+    width: 50%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*  ##################################  */
+
+.ul,li,a {
+    color: var(--white);
+    list-style: none;
+    text-decoration: none;
+}
+
+/*####  TAILLE POLICE ####*/
+.icon {
+    font-size: calc(1em * var(--icon-multiplier));
+}
+/**/
+.punchline {
+    display: flex;
+    font-size: 4em;
+}
+h1 {
+    font-size: calc(2.5em * var(--text-multiplier));
+}
+h2 {
+    font-size: calc(2em * var(--text-multiplier));
+}
+h3 {
+    font-size: calc(1.8em * var(--text-multiplier));
+}
+h4 {
+    font-size: calc(1.5em * var(--text-multiplier));
+}
+h5 {
+    font-size: calc(1.3em * var(--text-multiplier));
+}
+h6 {
+    font-size: calc(1.2em * var(--text-multiplier));
+}
+p {
+    font-size: calc(1.2em * var(--text-multiplier));
+}
+
+.titre-bold {font-weight: bold}
+.titre-semibold {font-weight: bolder}
+.texte-regular {font-weight: normal}
+
+.texte-surligner {
+    padding: .5em;
+    border-radius: 25px;
+    background-color: var(--pink2);
+}
+
+.uppercase {text-transform: uppercase;}
+
+/*  #########################################################  */
+.footer-link {font-size: calc(1em * var(--text-multiplier));}
+.txtFooterLink {font-size: calc(1em * var(--text-multiplier));}
+.nav-link {font-size: calc(1.3em * var(--text-multiplier));}
+/*  #########################################################  */
+
+.imgBase {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.imgComputerToPhone {
+    width: 100%;
+}
+
+/*####  BTN  ####*/
+.btn {
+    font-weight: bold;
+    font-size: calc(1.3em * var(--text-multiplier));
+}
+/***************************/
+/* BOUTON 1 */
+.bouton-blanc-appel-strategique {
+    transition: .3s;
+    padding: .5em 3em;
+    color: var(--pink4);
+    border-radius: 25rem;
+    background-color: var(--pink2);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.bouton-blanc-appel-strategique:hover {
+    color: var(--pink4);
+    border-radius: 25rem;
+    background-color: var(--white);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+/**/
+
+/* BOUTON 2 */
+.bouton-rose {
+    transition: .3s;
+    padding: .5em 3em;
+    color: var(--pink1);
+    border-radius: 25rem;
+    background-color: var(--pink4);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.bouton-rose:hover {
+    color: var(--pink1);
+    border-radius: 25rem;
+    background-color: var(--pink4);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+/**/
+/*###############################################################################*/
+/*  FIN BASE  */
+/*###############################################################################*/
+.bordure-top {padding-top: 2em;}
+.bordure-bot {padding-bottom: 2em;}
+
+.no-display-phone {
+    display: block;
+}
+.no-display-computer {
+    display: none;
+}
+
+.h-100vh {height: 100vh;}
+.h-90vh {height: 90vh;}
+.h-80vh {height: 80vh;}
+.h-70vh {height: 70vh;}
+
+.h-50vh {height: 50vh;}
+.h-40vh {height: 40vh;}
+.h-30vh {height: 30vh;}
+.h-20vh {height: 20vh;}
+.h-10vh {height: 10vh;}
+
+.h-100p {height: 100%;}
+
+.w-100p {width: 100%}
+.w-90p {width: 90%}
+.w-80p {width: 80%}
+.w-70p {width: 70%}
+.w-60p {width: 60%}
+.w-50p {width: 50%}
+.w-40p {width: 40%}
+
+/* Section Appel Stratégique */
+.sectionAppelStrategique {
+    background-color: var(--pink4);
+}
+.decoBoutonAccueil {
+    height: 79px;
+    width: 79px;
+}
+
+
+
+
+
+/*###############################################################################*/
+/*  RESPONSIVE  */
+/*###############################################################################*/
+@media (max-width: 991px) {
+    :root {
+        --text-multiplier: 2;
+        --icon-multiplier: 4;
+    }
+    /*  ######  NAV BARRE + FOOTER  ######  */
+    #logoNavBarre, #logoFooter {
+        height: 8vh;
+        width: 260px;
+    }
+    .navbar-toggler {font-size: 4em;}
+
+    .contenueFooter {
+        gap: 70px;
+        margin: 2em 0;
+        flex-direction: column;
+    }
+    /*  ##################################  */
+    /*##########  RÉSEAUX  ##########*/
+    .reseaux {
+        width: 80%;
+        justify-content: space-around;
+    }
+    .inputReseaux {
+        width: 120px;
+        height: 120px;
+    }
+    .bi-linkedin {
+        height: 50px;
+    }
+    /*  ##################################  */
+    .texte-center-phone {text-align: center;}
+
+    .col-6 {width: 80%;}
+    .col-4 {width: 80%;}
+
+    .bouton-blanc-appel-strategique {
+        padding: .4em 2em;
+        border-radius: 25rem;
+    }
+
+    .bordure-top {padding-top: 6em;}
+    .bordure-bot {padding-bottom: 6em;}
+
+    .no-display-phone {
+        display: none;
+    }
+    .no-display-computer {
+        display: block;
+    }
+}
+/*  ################################################################################################  */
