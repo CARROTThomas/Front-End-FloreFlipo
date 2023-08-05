@@ -1,9 +1,15 @@
 
-.background-image {
+.containerHeaderAccueil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.background-image-Accueil {
+    height: 90vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 90vh;
     background-image: url("../images/ressources/10 copie.png");
 }
 
@@ -16,18 +22,6 @@
 .section2Accueil {
     background-color: var(--pink1);
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .containerSection2Accueil {
@@ -62,14 +56,6 @@
     grid-row: 15 / 17;
 }
 
-
-
-
-
-
-
-
-
 .iconCheckbox {
     width: 40px;
     height: 40px;
@@ -102,6 +88,10 @@
     width: 120px;
 }
 
+.section4Accueil {
+    background-color: var(--pink1);
+}
+
 .section5Accueil {
     background-color: var(--pink2);
 }
@@ -127,67 +117,10 @@
 }
 
 
-/* Carrousel 1 */
-.swiper {
-    width: 100%;
-    height: 70vh;
-    display: flex;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    align-items: center;
-    --swiper-navigation-color: var(--grey);
-    --swiper-pagination-color: var(--grey);
-}
-.swiper-wrapper{
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-.swiper-slide{
-    min-width: 30%;
-    height: 50vh;
-    display: flex;
-    min-height: 70%;
-    max-height: 100%;
-    margin-left: 1.8vw;
-    margin-right: 1.8vw;
-    border-radius: 25px;
-    align-items: center;
-    flex-direction: column;
-    background-color: var(--white);
-}
-.imgProfilAvis {
-    width: 15vh;
-    height: 15vh;
-    margin-top: 15%;
-    margin-bottom: 2vh;
-    border-radius: 50%;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.containerContentAvisAccueil {
-    display: flex;
-    justify-content: center;
-}
-.name{
-    text-align: center;
-    margin-bottom: 1.5em;
-}
-.content{
-    width: 90%;
-    text-align: center;
-}
-.limited-text {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 7; /* Nombre de lignes à afficher avant les points de suspension */
-    overflow: hidden;
-}
-/* fin Carrousel 1 (Animation 2) */
-
-
 @media (max-width: 991px) {
+    .containerHeaderAccueil {
+        justify-content: space-around;
+    }
     .background-image {
         min-height: 80vh;
         background-image: url("../images/ressources/Version mobile.png");
@@ -210,10 +143,6 @@
         justify-content: center;
     }
 
-
-
-
-
     .containerSection2Accueil {
         display: grid;
         /* row / col */
@@ -233,20 +162,14 @@
         grid-column: 1 / 11;
         grid-row: 12 / 14;
     }
+    .imageDecoSection2Accueil {
+        grid-column: 4 / 10;
+        grid-row: 14 / 14;
+    }
     .iconCheckbox {
         width: 50px;
         height: 50px;
     }
-
-
-
-
-
-
-
-
-
-
 
     .section3Accueil {
         gap: 5em;
@@ -276,11 +199,5 @@
         width: 100%;
         align-items: center;
         justify-content: center;
-    }
-    .swiper-slide{
-        min-width: 96%;
-    }
-    .limited-text {
-        -webkit-line-clamp: 9; /* Nombre de lignes à afficher avant les points de suspension */
     }
 }

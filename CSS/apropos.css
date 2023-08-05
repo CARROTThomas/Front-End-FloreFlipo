@@ -1,0 +1,192 @@
+
+.background-image-Apropos {
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../images/ressources/34.png");
+}
+.containerHeaderApropos {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 13em;
+}
+
+
+.containerPillules {
+    gap: 4em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.containerPillule {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.pilules {
+    padding: .7em;
+    line-height: 22px;
+    color: var(--grey);
+    border-radius: 50px;
+    background-color: var(--pink1);
+}
+.pilules1 {margin-left: 5em}
+.pilules3 {margin-left: -5em}
+
+
+.section2Apropos {
+    background-color: var(--pink1);
+}
+.containerSection2Apropos {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+.containerTexteTitreSection2Apropos {
+    width: 55%;
+}
+.imgageSection2Apropos {
+    border-radius: 50%;
+    margin-left: -25em;
+    border: 30px solid var(--pink4);
+}
+.texte-life-computer {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 20; /* Nombre de lignes à afficher avant les points de suspension */
+    overflow: hidden;
+}
+
+.section3Apropos {
+    background-color: var(--pink2);
+}
+.iconDecoApropos {
+    height: 70px;
+    width: 70px;
+}
+
+.containerCarteValeurs {
+    width: 100%;
+    height: 70vh;
+    display: grid;
+    /* row / col */
+    grid-template: repeat(15, 1fr) / repeat(30, 1fr);
+}
+.carteValeur {
+    padding: 1em;
+    line-height: 19px;
+    border-radius: 30px;
+    color: var(--pink1);
+    background-color: var(--pink4);
+}
+.carteLiberte {
+    grid-row: 10 / 15;
+    grid-column: 1 / 9;
+}
+.carteOrganisation {
+    grid-row: 4 / 9;
+    grid-column: 3 / 11;
+}
+.carteAmelioration {
+    grid-row: 1 / 6;
+    grid-column: 12 / 20;
+}
+.carteCreativite {
+    grid-row: 4 / 9;
+    grid-column: 21 / 29;
+}
+.cartePartage {
+    grid-row: 10 / 15;
+    grid-column: 23 / 31;
+}
+.imageSection3Grid {
+    grid-row: 7 / 15;
+    grid-column: 11 / 21;
+}
+
+
+
+
+
+
+.section4Apropos {
+    background-color: var(--pink1);
+}
+
+
+@media (max-width: 991px) {
+
+    .background-image-Apropos {
+        height: 80vh;
+        background-image: url("../images/ressources/81.png");
+    }
+    .containerHeaderApropos {
+        margin-right: 0;
+        justify-content: center;
+    }
+
+    .containerPillules {
+        gap: 5em;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .containerPillule {
+        gap: 1em;
+        text-align: center;
+        align-items: center;
+    }
+    .pilules {
+        line-height: 45px;
+        background-color: var(--pink2);
+    }
+    .pilules1 {margin-left: 0}
+    .pilules3 {margin-left: 0}
+
+
+    .section2Apropos {
+        background-color: var(--pink2);
+    }
+    .containerSection3Apropos {
+        display: block;
+    }
+    .containerTexteTitreSection2Apropos {
+        width: 100%;
+    }
+    .titreSection2Apropos {
+        gap: 2em;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .containerTexteSection2Apropos {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .section3Apropos {
+        background-color: var(--pink1);
+    }
+    .titreSection3AproposRose, .titreSection3AproposBlanc {
+        width: 70%;
+        padding: .2em;
+        color: var(--pink2);
+        border-radius: 15px;
+        background-color: var(--pink4);
+    }
+    .titreSection3AproposBlanc {
+        color: var(--pink4);
+        background-color: var(--pink2);
+    }
+
+
+
+}
