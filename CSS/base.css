@@ -154,6 +154,7 @@ p {
     border-radius: 13px;
     background-color: var(--pink2);
 }
+.texte-end {text-align: end;}
 
 .uppercase {text-transform: uppercase;}
 
@@ -219,17 +220,25 @@ p {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 /**/
+/* BOUTON 3 */
+.btn-essayerLogiciel {
+    border-radius: 25px;
+    color: var(--pink1);
+    background-color: var(--pink4);
+    transition: 0.5s;
+}
+.btn-essayerLogiciel:hover {
+    color: var(--pink4);
+    border: 1px solid var(--pink4);
+}
+/**/
 /*###############################################################################*/
 /*###############################################################################*/
 .bordure-top {padding-top: 2em;}
 .bordure-bot {padding-bottom: 2em;}
 
-.no-display-phone {
-    display: block;
-}
-.no-display-computer {
-    display: none;
-}
+.no-display-phone {display: block;}
+.no-display-computer {display: none;}
 
 .h-100vh {height: 100vh;}
 .h-90vh {height: 90vh;}
@@ -261,13 +270,9 @@ p {
     width: 79px;
 }
 
-.espacement-lettres {
-    letter-spacing: 2px;
-}
+.espacement-lettres {letter-spacing: 2px;}
 
-
-
-
+.border-circle {border-radius: 50%;}
 
 
 
@@ -380,6 +385,7 @@ p {
     }
     /*  ##################################  */
     .texte-center-phone {text-align: center;}
+    .texte-start-phone {text-align: start}
     .center-phone {
         display: flex;
         justify-content: center;
@@ -389,8 +395,8 @@ p {
         width: 90%;
     }
 
-    .col-6 {width: 80%;}
     .col-4 {width: 80%;}
+    .col-6 {width: 80%;}
 
     .bouton-blanc-appel-strategique {
         padding: .4em 2em;

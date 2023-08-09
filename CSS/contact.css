@@ -1,0 +1,76 @@
+
+.mainContain {
+    display: flex;
+    min-width: 100%;
+    min-height: 700px;
+    position: relative;
+}
+
+.containerInfos {
+    z-index: 1;
+    top: 100px;
+    width: 350px;
+    padding: 40px;
+    display: flex;
+    position: absolute;
+    border-radius: 10px;
+    flex-direction: column;
+    height: calc(100% - 200px);
+    justify-content: space-between;
+    background-color: var(--pink4);
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+}
+.titreContactMe {
+    text-align: center;
+    color: var(--pink1);
+    text-transform: uppercase;
+}
+.containerListeInfos {
+    gap: 3em;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerCalendly {
+    height: 100%;
+    position: absolute;
+    margin-left: 150px;
+    border-radius: 10px;
+    width: calc(100% - 150px);
+    padding: 0 0 0 110px;
+    background-color: var(--pink2);
+}
+
+@media (max-width: 991px) {
+    .mainContain {
+        align-items: center;
+        flex-direction: column;
+    }
+    .containerInfos {
+        width: 90%;
+        height: 50vh;
+        position: relative;
+        border-radius: 25px;
+    }
+    .titreContactMe {
+        margin-left: 1.5em;
+        text-align: start;
+    }
+    .containerListeInfos {
+        width: 80%;
+        margin-left: 6em;
+    }
+    .containerCalendly {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        margin-top: 7em;
+        padding: 0;
+        position: relative;
+    }
+    .containerCalendly>* {
+        height: 100%;
+    }
+}
