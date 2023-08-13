@@ -33,7 +33,7 @@
     grid-column: 16 / 21;
 }
 .imageDecoSection3Apropos2 {
-    margin-left: -150px;
+    margin-left: -430px;
     grid-row: 1 / 15;
     grid-column: 1 / 6;
 }
@@ -180,12 +180,6 @@
         justify-content: center;
     }
 
-    .imageDecoSection3Apropos1 {
-        height: 800px;
-        margin-left: 330px;
-        grid-row: 1 / 5;
-        grid-column: 8 / 21;
-    }
     .containerPillules {
         gap: 5em;
         display: flex;
