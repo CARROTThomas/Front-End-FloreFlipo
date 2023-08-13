@@ -87,7 +87,7 @@ input:checked + .buttonToggleHomePageRessources::before {
     flex-direction: column;
 }
 
-.carteOutilPageRessources {
+.carteOutilPageRessources, .carteExpertPageRessources {
     display: flex;
     justify-content: center;
 }
@@ -97,6 +97,31 @@ input:checked + .buttonToggleHomePageRessources::before {
     border-radius: 25px;
     justify-content: space-between;
     background-color: var(--pink1);
+}
+
+
+.carteRightExpert {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+.inputImgProfessionnel {
+    width: 150px;
+    height: 150px;
+    background-color: var(--white);
+}
+.containerCarteLeftExpertPageRessources, .containerCarteRightExpertPageRessources {
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    justify-content: space-between;
+    background-color: var(--pink1);
+}
+.containerBoutonCarteRight, .containerBoutonCarteLeft {
+    display: flex;
+}
+.containerBoutonCarteRight {
+    justify-content: end;
 }
 
 
@@ -115,7 +140,6 @@ input:checked + .buttonToggleHomePageRessources::before {
     .titre-souligner {
         width: 120%;
     }
-
 
 
     /* BOUTON Toggle Outils / Experts HomePageRessources */
@@ -145,5 +169,29 @@ input:checked + .buttonToggleHomePageRessources::before {
     .containerCarteRightOutilPageRessources {
         gap: 3em;
         flex-direction: column;
+    }
+
+
+    .carteExpertPageRessources {
+        margin-top: 4em;
+    }
+    .carteRightExpert {
+        justify-content: center;
+    }
+    .inputImgProfessionnel {
+        width: 150px;
+        height: 150px;
+        background-color: var(--white);
+    }
+    .containerCarteLeftExpertPageRessources, .containerCarteRightExpertPageRessources {
+        gap: 3em;
+        flex-direction: column;
+    }
+    .containerCarteRightExpertPageRessources {
+        flex-direction: column-reverse;
+    }
+    .containerBoutonCarteRight, .containerBoutonCarteLeft {
+        margin-top: 3em;
+        justify-content: center;
     }
 }
