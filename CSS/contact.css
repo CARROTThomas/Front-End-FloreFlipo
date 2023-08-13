@@ -32,6 +32,12 @@
     display: flex;
     flex-direction: column;
 }
+.ancien-telephone {
+    color: white;
+    width: 33px;
+    height: 33px;
+    background-image: url("../images/ressources/45.png");
+}
 
 .containerCalendly {
     height: 100%;
@@ -61,6 +67,10 @@
     .containerListeInfos {
         width: 80%;
         margin-left: 6em;
+    }
+    .ancien-telephone {
+        width: 70px;
+        height: 70px;
     }
     .containerCalendly {
         width: 100%;
