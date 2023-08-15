@@ -124,10 +124,10 @@ h2 {
     font-size: calc(2em * var(--text-multiplier));
 }
 h3 {
-    font-size: calc(1.8em * var(--text-multiplier));
+    font-size: calc(1.9em * var(--text-multiplier));
 }
 h4 {
-    font-size: calc(1.5em * var(--text-multiplier));
+    font-size: calc(1.4em * var(--text-multiplier));
 }
 h5 {
     font-size: calc(1.3em * var(--text-multiplier));
@@ -174,7 +174,7 @@ p {
     height: 150px;
 }
 .imgDecorationTitre {
-    width: 150px;
+    width: 110px;
     height: auto;
 }
 
@@ -230,6 +230,19 @@ p {
 .btn-essayerLogiciel:hover {
     color: var(--pink4);
     border: 1px solid var(--pink4);
+}
+/**/
+/* BOUTON 3 */
+.btn-carteProgrammeMonCoaching {
+    transition: 0.5s;
+    border-radius: 25px;
+    color: var(--pink4);
+    background-color: var(--white);
+}
+.btn-carteProgrammeMonCoaching:hover {
+    color: var(--pink4);
+    border: 1px solid var(--white);
+    background-color: var(--white);
 }
 /**/
 /*###############################################################################*/

@@ -14,6 +14,24 @@
     margin-left: 5em;
 }
 
+.containerTitreSection1MonCoaching {
+    width: 100%;
+    display: grid;
+    /* row / col */
+    grid-template: repeat(6, 1fr) / repeat(25, 1fr);
+}
+.containerContentTitreSection1MonCoaching {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    grid-row: 1 / 7;
+    grid-column: 1 / 26;
+}
+.imgDecorationTitreSection1MonCoaching {
+    grid-row: 6 / 7;
+    grid-column: 14 / 16;
+}
+
 
 .caseObjectifs {
     width: 370px;
@@ -120,7 +138,165 @@
 .section4MonCoaching {
     background-color: var(--pink2);
 }
+.containerSection4MonCoaching {
+    width: 100%;
+    display: grid;
+    /* row / col */
+    grid-template: repeat(17, 1fr) / repeat(30, 1fr);
+}
+.containerTitreSection4MonCoaching {
+    grid-row: 1 / 5;
+    grid-column: 1 / 31;
+    gap: 2em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.containerContentSection4MonCoaching {
+    grid-row: 6 / 15;
+    grid-column: 1 / 31;
+    gap: 5em;
+    display: flex;
+    justify-content: center;
+}
+.containerCarteProgrammeSection4MonCoaching {
+    z-index: 5;
+    width: 30%;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    background-color: var(--pink4);
+}
+.titreCarteProgrammeSection4MonCoaching {
+    margin-top: -2.5em;
+    background-color: var(--white);
+}
+.containerBoutonSection4MonCoaching {
+    grid-row: 16 / 17;
+    grid-column: 1 / 31;
+    display: flex;
+    justify-content: center;
+}
+.etoileSection4MonCoaching {
+    width: 300px;
+    height: 300px;
+    grid-row: 1 / 9;
+    grid-column: 2 / 4;
+}
+.flecheSection4MonCoaching {
+    z-index: 0;
+    width: 400px;
+    height: 400px;
+    grid-row: 9 / 17;
+    grid-column: 22 / 31;
+}
 
+
+
+
+.containerSection5MonCoaching {
+    width: 100%;
+    display: grid;
+    /* row / col */
+    grid-template: repeat(16, 1fr) / repeat(30, 1fr);
+}
+.containerContentSection5MonCoaching {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-row: 1 / 11;
+    grid-column: 1 / 31;
+}
+.decorationTitreSection5MonCoaching {
+    grid-row: 8 / 9;
+    grid-column: 5 / 7;
+}
+.containerBoutonSection5MonCoaching {
+    grid-row: 12 / 14;
+    grid-column: 1 / 14;
+}
+.decorationChatSection5MonCoaching {
+    width: 300px;
+    height: 300px;
+    grid-row: 7 / 17;
+    grid-column: 27 / 31;
+    transform: scaleX(-1);
+}
+.containerContentVersementSection5MonCoaching {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/* BOUTON Toggle 1x / 4x versement Section5PageRessources */
+input {
+    display: none;
+}
+.buttonToggleSection5PageMonCoaching {
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+    border-radius: 200px;
+    background-color: var(--pink2);
+}
+.buttonToggleSection5PageMonCoaching::before {
+    content: '';
+    width: 30px;
+    margin: 5px;
+    height: 30px;
+    transition: 0.3s;
+    position: absolute;
+    border-radius: 200px;
+    background-color: #EE396AFF;
+}
+input:checked + .buttonToggleSection5PageMonCoaching {
+    background-color: var(--pink2);
+}
+input:checked + .buttonToggleSection5PageMonCoaching::before {
+    transform: translateX(60px);
+}
+/* FIN BOUTON Toggle 1x / 4x versement Section5PageRessources */
+/* Carte versement Section 5 Page Mon Coaching */
+.containerCarteVersementMonCoaching {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.carteVersementMonCoaching {
+    gap: .8em;
+    width: 45%;
+    display: flex;
+    padding: 2em 1em;
+    align-items: start;
+    border-radius: 25px;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--pink2);
+}
+.carteVersement4MonCoaching {
+    z-index: 5;
+    margin-right: -6em;
+    background-color: var(--pink4);
+}
+.sepaCarteVersement4MonCoaching, .sepaCarteVersement1MonCoaching{
+    width: 80%;
+    height: 2px;
+    background-color: var(--pink5);
+}
+.sepaCarteVersement1MonCoaching{
+    background-color: var(--pink3);
+}
+.carteVersementMonCoachingSelected {
+    padding: 2.5em 1.5em;
+    height: calc(100% + 10px);
+}
+/* FIN Carte versement Section 5 Page Mon Coaching */
 
 
 
@@ -164,11 +340,66 @@
         width: 85%;
     }
 
-
-
     .containerTitreSection3MonCoaching {
         display: flex;
         align-items: center;
         flex-direction: column;
+    }
+
+
+    .containerSection4MonCoaching {
+        gap: 4em;
+        display: flex;
+        flex-direction: column;
+    }
+    .containerContentSection4MonCoaching {
+        flex-direction: column;
+        align-items: center;
+    }
+    .containerCarteProgrammeSection4MonCoaching {
+        width: 80%;
+    }
+
+
+
+
+
+
+    .containerSection5MonCoaching {
+        display: block;
+    }
+    .containerContentSection5MonCoaching {
+        margin-top: 5em;
+        flex-direction: column;
+    }
+    .containerContentVersementSection5MonCoaching {
+        width: 100%;
+        flex-direction: row;
+    }
+    /* BOUTON Toggle 1x / 4x versement Section5PageRessources */
+    .buttonToggleSection5PageMonCoaching {
+        width: 150px;
+        height: 60px;
+    }
+    .buttonToggleSection5PageMonCoaching::before {
+        width: 40px;
+        margin: 10px;
+        height: 40px;
+    }
+    input:checked + .buttonToggleSection5PageMonCoaching::before {
+        transform: translateX(90px);
+    }
+    /* FIN BOUTON Toggle 1x / 4x versement Section5PageRessources */
+    .containerCarteVersementMonCoaching {
+        width: 60%;
+        flex-direction: column;
+    }
+    .carteVersementMonCoaching {
+        width: 100%;
+    }
+    .carteVersement4MonCoaching {
+        z-index: 5;
+        margin-right: 0;
+        margin-bottom: -2em;
     }
 }
