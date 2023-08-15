@@ -14,6 +14,7 @@
     margin-left: 5em;
 }
 
+
 .containerTitreSection1MonCoaching {
     width: 100%;
     display: grid;
@@ -66,8 +67,6 @@
     display: flex;
     flex-direction: column;
 }
-
-
 
 
 .containerTitreSection3MonCoaching {
@@ -134,7 +133,6 @@
 }
 
 
-
 .section4MonCoaching {
     background-color: var(--pink2);
 }
@@ -193,8 +191,6 @@
     grid-row: 9 / 17;
     grid-column: 22 / 31;
 }
-
-
 
 
 .containerSection5MonCoaching {
@@ -299,6 +295,110 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
 /* FIN Carte versement Section 5 Page Mon Coaching */
 
 
+.containerGridSection6MonCoaching {
+    width: 100%;
+    display: grid;
+    /* row / col */
+    grid-template: repeat(18, 1fr) / repeat(32, 1fr);
+}
+.containerSection6MonCoaching {
+    grid-row: 2 / 19;
+    grid-column: 1 / 31;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+.decorationSection6MonCoaching {
+    width: 100px;
+    height: 100px;
+    grid-row: 1 / 6;
+    grid-column: 31 / 33;
+}
+.containerContentSection6MonCoaching {
+    gap: 3em;
+    display: flex;
+    flex-direction: column;
+}
+.containerContentAvisSection6MonCoaching {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+.carteTemoignage {
+    width: 90%;
+    height: 23em;
+    display: flex;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--pink2);
+}
+/* CARROUSEL */
+.carousel {
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+}
+.txtContentAvis {
+    width: 180%;
+    height: 11em;
+    color: var(--grey);
+    overflow: auto;
+}
+.carousel-inner {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.carousel-caption {
+    left: 14%;
+    width: 73%;
+    bottom: -0.8rem;
+    display: flex;
+    flex-direction: column;
+}
+.carousel-item {
+    height: 100%;
+    width: 100%;
+}
+.imgProfil {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-size: cover;
+    background-image: url("https://cdn.discordapp.com/attachments/907008782377300010/1087666126269448222/samurai.jpg");
+}
+.carousel-control-prev {
+    left: -60px;
+}
+.carousel-control-next {
+    left: 523px;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    padding: .2em;
+    border-radius: 25px;
+    background-image: url("../images/ressources/40.png");
+}
+.carousel-indicators {
+    gap: .5em;
+    top: 370px;
+}
+
+.carousel-indicators > button[data-bs-target="#carouselExampleCaptions"] {
+    width: 0;
+    height: 0;
+    border: none;
+    padding: .5em;
+    border-radius: 50%;
+    background-color: var(--pink4);
+}
+/* FIN CARROUSEL */
+
+
+
 
 @media (max-width: 991px) {
 
@@ -346,7 +446,6 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
         flex-direction: column;
     }
 
-
     .containerSection4MonCoaching {
         gap: 4em;
         display: flex;
@@ -359,11 +458,6 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
     .containerCarteProgrammeSection4MonCoaching {
         width: 80%;
     }
-
-
-
-
-
 
     .containerSection5MonCoaching {
         display: block;
@@ -402,4 +496,42 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
         margin-right: 0;
         margin-bottom: -2em;
     }
+
+
+
+    .carteTemoignage {
+        height: 45em;
+    }
+    .containerGridSection6MonCoaching {
+        display: block;
+    }
+    .containerSection6MonCoaching {
+        gap: 4em;
+        align-items: center;
+        flex-direction: column;
+    }
+    .containerContentSection6MonCoaching {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .containerContentAvisSection6MonCoaching {
+        width: 100%;
+        justify-content: center;
+    }
+    .carousel-control-prev {
+        left: -92px;
+    }
+    .carousel-control-next {
+        left: 827px;
+    }
+    .carousel-indicators {
+        top: 725px;
+    }
+    .carousel-caption {
+        bottom: 2.2rem;
+    }
+
+
+
 }
