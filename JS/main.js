@@ -309,6 +309,14 @@ if (buttonToggleHomePageRessources) {
 
 
 
+/* Animation Page MonCoaching Accordion  */
+const contentElementAccordion = document.querySelectorAll('.contentElementAccordion')
+const contentTexteElementAccordion = document.querySelectorAll('.contentTexteElementAccordion')
 
-
+for (let i = 0; i < contentElementAccordion.length; i++) {
+    contentElementAccordion[i].addEventListener('click', ()=>{
+        contentTexteElementAccordion[i].classList.toggle('contentElementAccordionActive')
+        contentElementAccordion[i].classList.toggle('contentAccordionActive')
+    })
+}
 

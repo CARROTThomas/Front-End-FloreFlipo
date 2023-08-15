@@ -319,6 +319,7 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
     display: flex;
     flex-direction: column;
 }
+/* CARROUSEL */
 .containerContentAvisSection6MonCoaching {
     width: 50%;
     height: 100%;
@@ -335,7 +336,6 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
     justify-content: center;
     background-color: var(--pink2);
 }
-/* CARROUSEL */
 .carousel {
     height: 100%;
     width: 100%;
@@ -386,7 +386,6 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
     gap: .5em;
     top: 370px;
 }
-
 .carousel-indicators > button[data-bs-target="#carouselExampleCaptions"] {
     width: 0;
     height: 0;
@@ -396,6 +395,65 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
     background-color: var(--pink4);
 }
 /* FIN CARROUSEL */
+
+
+
+.accordion {
+    gap: 2em;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+}
+.contentElementAccordion {
+    width: 75%;
+}
+.labelElementAccordion {
+    gap: 5em;
+    display: flex;
+    cursor: pointer;
+    padding: .8em 2em;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: start;
+    background-color: var(--pink2);
+}
+.titreLabelElementAccordion {
+    color: var(--pink4);
+}
+.iconFlecheAccordion {
+    width: 40px;
+    height: 40px;
+    background-image: url("../images/ressources/accordion.png");
+}
+.contentTexteElementAccordion {
+    height: 0;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+.contentAccordionActive {
+    border-radius: 25px;
+    background-color: var(--pink2);
+}
+.contentAccordionActive > .labelElementAccordion {
+    background-color: var(--pink4);
+}
+.contentAccordionActive > .labelElementAccordion > .iconFlecheAccordion {
+    background-image: url("../images/ressources/accordionActive.png");
+}
+
+.contentAccordionActive > .labelElementAccordion > .titreLabelElementAccordion {
+    color: var(--pink2);
+}
+.contentElementAccordionActive {
+    height: auto;
+    overflow: hidden;
+}
+
+
 
 
 
@@ -498,7 +556,6 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
     }
 
 
-
     .carteTemoignage {
         height: 45em;
     }
@@ -532,6 +589,8 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
         bottom: 2.2rem;
     }
 
-
+    .contentElementAccordion {
+        width: 96%;
+    }
 
 }
