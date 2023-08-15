@@ -397,7 +397,6 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
 /* FIN CARROUSEL */
 
 
-
 .accordion {
     gap: 2em;
     display: flex;
@@ -444,7 +443,6 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
 .contentAccordionActive > .labelElementAccordion > .iconFlecheAccordion {
     background-image: url("../images/ressources/accordionActive.png");
 }
-
 .contentAccordionActive > .labelElementAccordion > .titreLabelElementAccordion {
     color: var(--pink2);
 }
@@ -452,9 +450,6 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
     height: auto;
     overflow: hidden;
 }
-
-
-
 
 
 
@@ -592,5 +587,4 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
     .contentElementAccordion {
         width: 96%;
     }
-
 }
