@@ -7,17 +7,14 @@
     background-repeat: no-repeat;
     background-image: url("../images/ressources/39.png");
 }
-
-
 .containerHeaderRessources {
-    gap: 5em;
+    gap: 3em;
     height: 40vh;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 }
-
 .titreHeaderRessources {
     font-weight: bold;
     color: var(--pink2);
@@ -64,12 +61,11 @@ input:checked + .buttonToggleHomePageRessources {
 input:checked + .buttonToggleHomePageRessources::before {
     transform: translateX(60px);
 }
-
 /* FIN BOUTON Toggle Outils / Experts HomePageRessources */
 
 
 .section1Ressources {
-    margin-top: -6em;
+    margin-top: -8em;
     display: flex;
     justify-content: center;
 }
@@ -81,8 +77,9 @@ input:checked + .buttonToggleHomePageRessources::before {
     background-color: var(--pink2);
 }
 
+
 .containerSection2Ressources {
-    gap: 5em;
+    gap: 4em;
     display: flex;
     flex-direction: column;
 }
@@ -92,6 +89,7 @@ input:checked + .buttonToggleHomePageRessources::before {
     justify-content: center;
 }
 .containerCarteLeftOutilPageRessources, .containerCarteRightOutilPageRessources {
+    padding: 1em;
     display: flex;
     align-items: center;
     border-radius: 25px;
@@ -110,6 +108,7 @@ input:checked + .buttonToggleHomePageRessources::before {
     height: 150px;
     background-color: var(--white);
 }
+
 .containerCarteLeftExpertPageRessources, .containerCarteRightExpertPageRessources {
     display: flex;
     align-items: center;

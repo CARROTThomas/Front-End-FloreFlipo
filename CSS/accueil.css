@@ -83,7 +83,7 @@
     align-items: center;
     flex-direction: column;
 }
-.iconAtelier {
+.iconAtelier, .iconChatSection2Accueil {
     height: 120px;
     width: 120px;
 }
@@ -121,8 +121,8 @@
     .containerHeaderAccueil {
         justify-content: space-around;
     }
-    .background-image {
-        min-height: 80vh;
+    .background-image-Accueil {
+        min-height: 90vh;
         background-image: url("../images/ressources/Version mobile.png");
     }
 
@@ -135,6 +135,10 @@
     .elementsSection1Phone {
         display: flex;
         align-items: center;
+    }
+    .iconSection1Accueil {
+        width: 70px;
+        height: 70px;
     }
 
     .mode-phone-section1Accueil {
@@ -166,9 +170,16 @@
         grid-column: 4 / 10;
         grid-row: 14 / 14;
     }
+    .iconChatSection2Accueil {
+        width: 200px;
+        height: 200px;
+    }
     .iconCheckbox {
         width: 50px;
         height: 50px;
+    }
+    .titreValeurSection2Accueil {
+        font-size: 2rem;
     }
 
     .section3Accueil {

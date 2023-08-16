@@ -15,6 +15,8 @@
 }
 
 
+
+
 .containerTitreSection1MonCoaching {
     width: 100%;
     display: grid;
@@ -32,20 +34,25 @@
     grid-row: 6 / 7;
     grid-column: 14 / 16;
 }
+.imageChatSection1MonCoaching {
+    height: 50vh;
+}
+
+
 
 
 .caseObjectifs {
-    width: 370px;
+    width: 380px;
     display: flex;
 
-    margin: 3em 1em;
-    padding: 2em 1em;
+    margin: 2em 1em;
+    padding: 1em;
 
     border-radius: 15px;
     align-items: center;
     justify-content: start;
     background-color: var(--pink1);
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
 }
 .caseObjectifsDecaler {
     margin-left: -8em;
@@ -58,6 +65,13 @@
     width: 70%;
 }
 .containerSection2MonCoaching {
+    padding: 1em;
+    display: flex;
+    border-radius: 25px;
+    flex-direction: column;
+    background-color: var(--pink2);
+}
+.containerContentSection2MonCoaching {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -89,6 +103,7 @@
     flex-direction: column;
     justify-content: start;
 }
+
 .carteProgramme1 {
     margin-top: -.5em;
     grid-row: 12 / 15;
@@ -126,11 +141,15 @@
     grid-row: 12 / 16;
     grid-column: 23 / 30;
 }
+
 .titre-decorer-Section3MonCoaching {
     padding: .5em;
     border-radius: 13px;
     background-color: var(--pink5);
 }
+
+
+
 
 
 .section4MonCoaching {
@@ -193,6 +212,7 @@
 }
 
 
+
 .containerSection5MonCoaching {
     width: 100%;
     display: grid;
@@ -206,9 +226,10 @@
     grid-row: 1 / 11;
     grid-column: 1 / 31;
 }
+
 .decorationTitreSection5MonCoaching {
     grid-row: 8 / 9;
-    grid-column: 5 / 7;
+    grid-column: 4 / 6;
 }
 .containerBoutonSection5MonCoaching {
     grid-row: 12 / 14;
@@ -217,7 +238,7 @@
 .decorationChatSection5MonCoaching {
     width: 300px;
     height: 300px;
-    grid-row: 7 / 17;
+    grid-row: 5 / 17;
     grid-column: 27 / 31;
     transform: scaleX(-1);
 }
@@ -277,7 +298,7 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
 }
 .carteVersement4MonCoaching {
     z-index: 5;
-    margin-right: -6em;
+    margin-right: -5em;
     background-color: var(--pink4);
 }
 .sepaCarteVersement4MonCoaching, .sepaCarteVersement1MonCoaching{
@@ -293,6 +314,8 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
     height: calc(100% + 10px);
 }
 /* FIN Carte versement Section 5 Page Mon Coaching */
+
+
 
 
 .containerGridSection6MonCoaching {
@@ -397,6 +420,8 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
 /* FIN CARROUSEL */
 
 
+
+
 .accordion {
     gap: 2em;
     display: flex;
@@ -419,6 +444,7 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
 }
 .titreLabelElementAccordion {
     color: var(--pink4);
+    user-select: none;
 }
 .iconFlecheAccordion {
     width: 40px;
@@ -431,8 +457,13 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
     margin: auto;
     display: flex;
     overflow: hidden;
-    justify-content: center;
+    justify-content: start;
 }
+
+.accordion .contentElementAccordion .contentTexteElementAccordion {
+    transition: .5s;
+}
+
 .contentAccordionActive {
     border-radius: 25px;
     background-color: var(--pink2);
@@ -447,9 +478,10 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
     color: var(--pink2);
 }
 .contentElementAccordionActive {
-    height: auto;
+    height: calc(150px);
     overflow: hidden;
 }
+
 
 
 
@@ -481,11 +513,21 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
     .caseObjectifsDecaler {
         margin-left: 0;
     }
+    .iconCheckboxMC {
+       margin-right: 1em;
+    }
+    .imageChatSection1MonCoaching {
+        height: 17vh;
+        width: auto;
+    }
+
+
+
 
     .divImageSection2MonCoaching {
         width: 100%;
     }
-    .containerSection2MonCoaching {
+    .containerContentSection2MonCoaching {
         flex-direction: column-reverse;
     }
     .containerTexteSection2MonCoaching {
@@ -557,6 +599,9 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
     .containerGridSection6MonCoaching {
         display: block;
     }
+    .chiffresSection6MonCoaching {
+        font-size: 6em;
+    }
     .containerSection6MonCoaching {
         gap: 4em;
         align-items: center;
@@ -572,19 +617,29 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
         justify-content: center;
     }
     .carousel-control-prev {
-        left: -92px;
+        left: -73px;
     }
     .carousel-control-next {
-        left: 827px;
+        left: 805px;
     }
     .carousel-indicators {
-        top: 725px;
+        gap: 1.5em;
+        top: 785px;
     }
     .carousel-caption {
-        bottom: 2.2rem;
+        bottom: -0.6rem;
     }
-
     .contentElementAccordion {
         width: 96%;
+    }
+    .imgProfil {
+        height: 200px;
+        width: 200px;
+    }
+    .carousel-indicators > button[data-bs-target="#carouselExampleCaptions"] {
+        padding: 1em;
+    }
+    .contentElementAccordionActive {
+        height: calc(450px);
     }
 }

@@ -232,7 +232,7 @@ p {
     border: 1px solid var(--pink4);
 }
 /**/
-/* BOUTON 3 */
+/* BOUTON 4 */
 .btn-carteProgrammeMonCoaching {
     transition: 0.5s;
     border-radius: 25px;
@@ -282,8 +282,6 @@ p {
     height: 79px;
     width: 79px;
 }
-
-.espacement-lettres {letter-spacing: 2px;}
 
 .border-circle {border-radius: 50%;}
 
@@ -370,6 +368,9 @@ p {
         --text-multiplier: 2;
         --icon-multiplier: 4;
     }
+    body {
+        overflow-x: hidden;
+    }
     /*  ######  NAV BARRE + FOOTER  ######  */
     #logoNavBarre, #logoFooter {
         height: 8vh;
@@ -397,6 +398,7 @@ p {
         height: 50px;
     }
     /*  ##################################  */
+    .texte-bold-phone {font-weight: bold}
     .texte-center-phone {text-align: center;}
     .texte-start-phone {text-align: start}
     .center-phone {
@@ -404,8 +406,20 @@ p {
         justify-content: center;
     }
 
+    .btn {
+        --bs-btn-padding-x:2.8rem;
+    }
     .bouton-phone {
         width: 90%;
+    }
+    /* BOUTON 3 */
+    .btn-essayerLogiciel {
+        border-radius: 75px;
+    }
+    /**/
+    .btn-carteProgrammeMonCoaching {
+        border-radius: 75px;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     }
 
     .col-4 {width: 80%;}

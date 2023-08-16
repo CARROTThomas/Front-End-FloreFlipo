@@ -13,6 +13,10 @@
     justify-content: flex-end;
     margin-right: 13em;
 }
+#iconSalut {
+    position: absolute;
+    animation: emojiSalut 1s infinite;
+}
 
 
 .containerSection1Apropos {
@@ -28,17 +32,19 @@
     grid-row: 1 / 7;
     grid-column: 1 / 21;
 }
+
 .imageDecoSection3Apropos1 {
     grid-row: 1 / 7;
     grid-column: 16 / 21;
 }
 .imageDecoSection3Apropos2 {
-    margin-left: -430px;
     grid-row: 1 / 15;
     grid-column: 1 / 6;
+    margin-left: -230px;
 }
 .imageDecoSection3AproposCercle {
     z-index: 0;
+    height: 500px;
 }
 .containerPillules {
     gap: 4em;
@@ -66,7 +72,6 @@
 
 
 
-
 .section2Apropos {
     background-color: var(--pink1);
 }
@@ -76,21 +81,29 @@
     justify-content: space-between;
 }
 .containerTexteTitreSection2Apropos {
-    width: 55%;
+    width: 50%;
 }
 .imgageSection2Apropos {
     border-radius: 50%;
-    margin-left: -25em;
+    margin-left: -20em;
     border: 30px solid var(--pink4);
 }
 .texte-life-computer {
+    overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 20; /* Nombre de lignes à afficher avant les points de suspension */
-    overflow: hidden;
 }
 
 
+
+.section3Apropos {
+    background-color: var(--pink2);
+}
+.iconDecoApropos {
+    height: 70px;
+    width: 70px;
+}
 
 .containerGridTitreSection3Apropos {
     width: 100%;
@@ -104,8 +117,6 @@
     grid-row: 3 / 5;
     grid-column: 1 / 21;
 }
-
-
 .iconDecoAproposTraits {
     margin-left: 2.5em;
     grid-row: 1 / 4;
@@ -116,21 +127,14 @@
     grid-column: 7 / 8;
 }
 
-
-.section3Apropos {
-    background-color: var(--pink2);
-}
-.iconDecoApropos {
-    height: 70px;
-    width: 70px;
-}
 .containerCarteValeurs {
     width: 100%;
     height: 70vh;
     display: grid;
     /* row / col */
-    grid-template: repeat(15, 1fr) / repeat(30, 1fr);
+    grid-template: repeat(14, 1fr) / repeat(30, 2fr);
 }
+
 .carteValeur {
     padding: 1em;
     line-height: 19px;
@@ -164,9 +168,16 @@
 }
 
 
+
+
+
 .section4Apropos {
     background-color: var(--pink1);
 }
+
+
+
+
 
 
 @media (max-width: 991px) {
@@ -203,9 +214,6 @@
     .section2Apropos {
         background-color: var(--pink2);
     }
-    .containerSection3Apropos {
-        display: block;
-    }
     .containerTexteTitreSection2Apropos {
         width: 100%;
     }
@@ -239,5 +247,17 @@
     }
 
 
+}
 
+
+@keyframes emojiSalut {
+    0% {
+        transform: rotate(-10deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(-10deg);
+    }
 }

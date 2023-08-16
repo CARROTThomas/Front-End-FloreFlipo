@@ -1,6 +1,14 @@
 
 
 
+
+
+
+
+
+
+
+
 /* Animation Ecriture  */
 const txtAnim = document.querySelector('.changing-text')
 
@@ -84,8 +92,8 @@ if (buttonToggleHomePageRessources) {
             containerSection2Ressources.innerHTML = ''
             containerSection2Ressources.innerHTML = contentExperts()
             txtIntroPageRessources.innerHTML =`Chaque entrepreneur est spécialisé dans son domaine. <br>
-            Depuis que je me suis lancée, j’ai dû faire appel à différentes expertises pour créer le business dont je suis fière aujourd'hui. Dans cette page, je te présente des experts aux compétences complémentaires.
-            Ils sauront t'accompagner dans la mise en place de tes projets si cela dépasse mes compétences.
+            Depuis que je me suis lancée, j’ai dû faire appel à différentes expertises pour créer le business dont je suis fière aujourd'hui.<br> Dans cette page, je te présente des experts aux compétences complémentaires.
+            <br>Ils sauront t'accompagner dans la mise en place de tes projets si cela dépasse mes compétences.
         `
         }
         else {
