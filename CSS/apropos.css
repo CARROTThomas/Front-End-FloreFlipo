@@ -17,37 +17,40 @@
     position: absolute;
     animation: emojiSalut 1s infinite;
 }
+.titreHeaderMonCoaching {
+    font-size: 3em;
+}
 
 
 .containerSection1Apropos {
     width: 100%;
     display: grid;
     /* row / col */
-    grid-template: repeat(6, 1fr) / repeat(20, 1fr);
+    grid-template: repeat(7, 1fr) / repeat(20, 1fr);
 }
 .containerContentSection1Apropos {
     z-index: 5;
     display: flex;
     justify-content: center;
-    grid-row: 1 / 7;
+    grid-row: 1 / 8;
     grid-column: 1 / 21;
 }
 
 .imageDecoSection3Apropos1 {
-    grid-row: 1 / 7;
+    grid-row: 1 / 8;
     grid-column: 16 / 21;
 }
 .imageDecoSection3Apropos2 {
     grid-row: 1 / 15;
     grid-column: 1 / 6;
-    margin-left: -230px;
+    margin-left: -330px;
 }
 .imageDecoSection3AproposCercle {
     z-index: 0;
-    height: 500px;
+    height: 636px;
 }
 .containerPillules {
-    gap: 4em;
+    gap: 3em;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -60,11 +63,11 @@
     justify-content: space-between;
 }
 .pilules {
-    padding: .7em;
+    padding: 1.5em;
     line-height: 22px;
     color: var(--grey);
-    border-radius: 50px;
-    background-color: var(--pink1);
+    border-radius: 15px;
+    background-color: var(--pink2);
 }
 .pilules1 {margin-left: 5em}
 .pilules3 {margin-left: -5em}
@@ -73,7 +76,7 @@
 
 
 .section2Apropos {
-    background-color: var(--pink1);
+    background-color: var(--pink2);
 }
 .containerSection2Apropos {
     display: flex;
@@ -81,6 +84,7 @@
     justify-content: space-between;
 }
 .containerTexteTitreSection2Apropos {
+    padding: 4em;
     width: 50%;
 }
 .imgageSection2Apropos {
