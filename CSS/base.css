@@ -140,7 +140,7 @@ p {
 }
 
 .titre-bold {font-weight: bold}
-.titre-semibold {font-weight: bolder}
+.titre-semibold {font-weight: 600}
 .texte-regular {font-weight: normal}
 
 .texte-surligner {
@@ -216,7 +216,7 @@ p {
 .bouton-rose:hover {
     color: var(--pink1);
     border-radius: 25rem;
-    background-color: var(--pink4);
+    background-color: var(--pink5);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 /**/
@@ -228,8 +228,8 @@ p {
     transition: 0.5s;
 }
 .btn-essayerLogiciel:hover {
-    color: var(--pink4);
-    border: 1px solid var(--pink4);
+    color: var(--pink1);
+    background-color: var(--pink5);
 }
 /**/
 /* BOUTON 4 */
@@ -240,9 +240,9 @@ p {
     background-color: var(--white);
 }
 .btn-carteProgrammeMonCoaching:hover {
-    color: var(--pink4);
+    color: var(--white);
     border: 1px solid var(--white);
-    background-color: var(--white);
+    background-color: var(--pink5);
 }
 /**/
 /*###############################################################################*/
