@@ -13,7 +13,12 @@
     height: 50vh;
     margin-left: 5em;
 }
-
+.titreHeaderMonCoaching {
+    font-size: 3em;
+}
+.texteHeaderMonCoaching {
+    font-size: 2em;
+}
 
 
 
@@ -40,7 +45,9 @@
 
 
 
-
+.containerCasesObjectifs {
+    margin-left: 8em;
+}
 .caseObjectifs {
     width: 380px;
     display: flex;
@@ -65,11 +72,11 @@
     width: 70%;
 }
 .containerSection2MonCoaching {
-    padding: 1em;
+    padding: 4em;
     display: flex;
     border-radius: 25px;
     flex-direction: column;
-    background-color: var(--pink2);
+    background-color: var(--pink1);
 }
 .containerContentSection2MonCoaching {
     display: flex;
@@ -145,7 +152,7 @@
 .titre-decorer-Section3MonCoaching {
     padding: .5em;
     border-radius: 13px;
-    background-color: var(--pink5);
+    background-color: var(--pink4);
 }
 
 
@@ -236,6 +243,7 @@
     grid-column: 1 / 14;
 }
 .decorationChatSection5MonCoaching {
+    z-index: 7;
     width: 300px;
     height: 300px;
     grid-row: 5 / 17;
@@ -291,27 +299,26 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
     display: flex;
     padding: 2em 1em;
     align-items: start;
+    color: var(--pink4);
     border-radius: 25px;
     flex-direction: column;
     justify-content: space-between;
     background-color: var(--pink2);
 }
 .carteVersement4MonCoaching {
-    z-index: 5;
     margin-right: -5em;
-    background-color: var(--pink4);
 }
-.sepaCarteVersement4MonCoaching, .sepaCarteVersement1MonCoaching{
+.sepaCarteVersementMonCoaching{
     width: 80%;
     height: 2px;
-    background-color: var(--pink5);
-}
-.sepaCarteVersement1MonCoaching{
     background-color: var(--pink3);
 }
 .carteVersementMonCoachingSelected {
+    z-index: 5;
+    color: var(--pink2);
     padding: 2.5em 1.5em;
     height: calc(100% + 10px);
+    background-color: var(--pink4);
 }
 /* FIN Carte versement Section 5 Page Mon Coaching */
 
@@ -478,7 +485,7 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
     color: var(--pink2);
 }
 .contentElementAccordionActive {
-    height: calc(150px);
+    height: calc(180px);
     overflow: hidden;
 }
 
@@ -501,10 +508,14 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
     }
     .imgHeaderMonCoaching {
         margin: 0;
+        margin-top: 9em;
         width: 100%;
         height: auto;
     }
 
+    .containerCasesObjectifs {
+        margin: 0;
+    }
     .caseObjectifs {
         width: auto;
         margin: 2em 0;
@@ -640,6 +651,6 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
         padding: 1em;
     }
     .contentElementAccordionActive {
-        height: calc(450px);
+        height: calc(480px);
     }
 }

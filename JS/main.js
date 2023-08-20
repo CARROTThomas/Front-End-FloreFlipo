@@ -2,13 +2,6 @@
 
 
 
-
-
-
-
-
-
-
 /* Animation Ecriture  */
 const txtAnim = document.querySelector('.changing-text')
 
@@ -85,7 +78,6 @@ if (buttonToggleHomePageRessources) {
         containerSection2Ressources.classList.toggle("margin-top-Expert")
         verifCheckBox()
     })
-
 
     function verifCheckBox() {
         if(buttonToggleHomePageRessources.checked){
@@ -314,6 +306,30 @@ if (buttonToggleHomePageRessources) {
     }
 
 }
+
+
+/* Animation Page MonCoaching Versement  */
+
+// Boutton : label Versment 1x/4x
+const BoutonCheckVersement = document.querySelector('#checkVersement')
+
+
+if (BoutonCheckVersement) {
+    // carte Versement 1x
+    const carteVersement1MonCoaching = document.querySelector('#carteVersement1MonCoaching')
+// carte Versement 4x
+    const carteVersement4MonCoaching = document.querySelector('#carteVersement4MonCoaching')
+
+    BoutonCheckVersement.addEventListener('click', ()=>{
+        carteVersement1MonCoaching.classList.toggle("carteVersementMonCoachingSelected")
+        carteVersement4MonCoaching.classList.toggle("carteVersementMonCoachingSelected")
+    })
+}
+
+
+
+
+
 
 
 

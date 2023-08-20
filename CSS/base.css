@@ -19,7 +19,7 @@
     --white: #fff;
     --grey: #3C414F;
 
-    --pink1: #FFEFF5;
+    --pink1: #FFF9FB;
     --pink2: #FFE5EC;
     --pink3: #FFD2DE;
     --pink4: #ee396a;
@@ -38,7 +38,7 @@
 body {
     min-height: 100vh;
     overflow-x: hidden;
-    background-color: var(--pink1);
+    background-color: var(--white);
 }
 /*  #########################################################  */
 
@@ -265,6 +265,7 @@ p {
 .h-10vh {height: 10vh;}
 
 .h-100p {height: 100%;}
+.h-60p {height: 60%;}
 
 .w-100p {width: 100%}
 .w-90p {width: 90%}
@@ -377,7 +378,12 @@ p {
         width: 260px;
     }
     .navbar-toggler {font-size: 4em;}
-    .navbar {height: auto}
+    .navbar {
+        width: 100%;
+        height: auto;
+        z-index: 100;
+        position: fixed;
+    }
 
     .contenueFooter {
         gap: 70px;

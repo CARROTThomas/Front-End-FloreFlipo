@@ -17,7 +17,7 @@
     position: absolute;
     animation: emojiSalut 1s infinite;
 }
-.titreHeaderMonCoaching {
+.titreHeaderApropos {
     font-size: 3em;
 }
 
@@ -67,7 +67,7 @@
     line-height: 22px;
     color: var(--grey);
     border-radius: 15px;
-    background-color: var(--pink2);
+    background-color: var(--pink1);
 }
 .pilules1 {margin-left: 5em}
 .pilules3 {margin-left: -5em}
@@ -76,20 +76,20 @@
 
 
 .section2Apropos {
-    background-color: var(--pink2);
+    background-color: var(--pink1);
 }
 .containerSection2Apropos {
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: space-between;
 }
 .containerTexteTitreSection2Apropos {
-    padding: 4em;
+    padding: 2em;
     width: 50%;
 }
 .imgageSection2Apropos {
     border-radius: 50%;
-    margin-left: -20em;
+    margin-left: -14em;
     border: 30px solid var(--pink4);
 }
 .texte-life-computer {
@@ -133,7 +133,7 @@
 
 .containerCarteValeurs {
     width: 100%;
-    height: 70vh;
+    height: 75vh;
     display: grid;
     /* row / col */
     grid-template: repeat(14, 1fr) / repeat(30, 2fr);
@@ -170,7 +170,10 @@
     grid-row: 7 / 15;
     grid-column: 11 / 21;
 }
-
+.texteCarteValeursSection3Apropos {
+    height: 160px;
+    overflow-y: scroll;
+}
 
 
 
@@ -193,6 +196,11 @@
     .containerHeaderApropos {
         margin-right: 0;
         justify-content: center;
+    }
+    .titreHeaderApropos {
+        font-size: 4em;
+        font-weight: bold;
+        text-transform: uppercase;
     }
 
     .containerPillules {
