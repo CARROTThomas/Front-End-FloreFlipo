@@ -320,9 +320,15 @@ if (BoutonCheckVersement) {
 // carte Versement 4x
     const carteVersement4MonCoaching = document.querySelector('#carteVersement4MonCoaching')
 
+    const sepaCarteVersement4MonCoaching = document.querySelector('.sepaCarteVersement4MonCoaching')
+    const sepaCarteVersement1MonCoaching = document.querySelector('.sepaCarteVersement1MonCoaching')
+
+
     BoutonCheckVersement.addEventListener('click', ()=>{
         carteVersement1MonCoaching.classList.toggle("carteVersementMonCoachingSelected")
         carteVersement4MonCoaching.classList.toggle("carteVersementMonCoachingSelected")
+        sepaCarteVersement4MonCoaching.classList.toggle("sepaCarteVersementMonCoachingSelected")
+        sepaCarteVersement1MonCoaching.classList.toggle("sepaCarteVersementMonCoachingSelected")
     })
 }
 

@@ -44,7 +44,11 @@
 }
 
 
-
+.containerContentCasesObjectifsImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .containerCasesObjectifs {
     margin-left: 8em;
 }
@@ -68,6 +72,15 @@
     width: 75px;
     height: 75px;
 }
+.containerImageSection1MonCoaching {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+
+
 .divImageSection2MonCoaching {
     width: 70%;
 }
@@ -308,15 +321,18 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
 .carteVersement4MonCoaching {
     margin-right: -5em;
 }
-.sepaCarteVersementMonCoaching{
+.sepaCarteVersement4MonCoaching, .sepaCarteVersement1MonCoaching{
     width: 80%;
     height: 2px;
     background-color: var(--pink3);
 }
+.sepaCarteVersementMonCoachingSelected {
+    background-color: var(--pink4);
+}
 .carteVersementMonCoachingSelected {
     z-index: 5;
     color: var(--pink2);
-    padding: 2.5em 1.5em;
+    padding: 2em 1em;
     height: calc(100% + 10px);
     background-color: var(--pink4);
 }
@@ -513,12 +529,17 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
         height: auto;
     }
 
+
+    .containerContentCasesObjectifsImage {
+        justify-content: space-between;
+    }
     .containerCasesObjectifs {
+        width: 50%;
         margin: 0;
     }
     .caseObjectifs {
         width: auto;
-        margin: 2em 0;
+        margin: 3em 0;
         padding: 1em 1em;
     }
     .caseObjectifsDecaler {
@@ -527,8 +548,11 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
     .iconCheckboxMC {
        margin-right: 1em;
     }
+    .containerImageSection1MonCoaching {
+        justify-content: end;
+    }
     .imageChatSection1MonCoaching {
-        height: 17vh;
+        height: 16vh;
         width: auto;
     }
 
@@ -552,18 +576,32 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
         flex-direction: column;
     }
 
+
+
+
+
     .containerSection4MonCoaching {
         gap: 4em;
         display: flex;
         flex-direction: column;
     }
     .containerContentSection4MonCoaching {
-        flex-direction: column;
+        gap: 9em;
+        margin-top: 3em;
         align-items: center;
+        flex-direction: column;
     }
     .containerCarteProgrammeSection4MonCoaching {
         width: 80%;
     }
+    .titreCarteProgrammeSection4MonCoaching {
+        font-size: 2.4em;
+    }
+
+
+
+
+
 
     .containerSection5MonCoaching {
         display: block;
@@ -574,6 +612,7 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
     }
     .containerContentVersementSection5MonCoaching {
         width: 100%;
+        margin-top: 5em;
         flex-direction: row;
     }
     /* BOUTON Toggle 1x / 4x versement Section5PageRessources */
@@ -591,7 +630,7 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
     }
     /* FIN BOUTON Toggle 1x / 4x versement Section5PageRessources */
     .containerCarteVersementMonCoaching {
-        width: 60%;
+        width: 90%;
         flex-direction: column;
     }
     .carteVersementMonCoaching {
