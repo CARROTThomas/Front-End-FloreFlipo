@@ -87,10 +87,13 @@
     padding: 2em;
     width: 50%;
 }
-.imgageSection2Apropos {
+.imgageSection2Apropos, .imgage2Section2Apropos {
     border-radius: 50%;
     margin-left: -14em;
     border: 30px solid var(--pink4);
+}
+.imgage2Section2Apropos {
+    margin-right: -12em;
 }
 .texte-life-computer {
     overflow: hidden;
