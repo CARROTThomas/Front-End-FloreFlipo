@@ -365,6 +365,9 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
     display: flex;
     flex-direction: column;
 }
+.chiffresSection6MonCoaching {
+    font-size: 3em;
+}
 /* CARROUSEL */
 .containerContentAvisSection6MonCoaching {
     width: 50%;

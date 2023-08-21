@@ -133,7 +133,7 @@
 
 .containerCarteValeurs {
     width: 100%;
-    height: 75vh;
+    height: 80vh;
     display: grid;
     /* row / col */
     grid-template: repeat(14, 1fr) / repeat(30, 2fr);
@@ -242,6 +242,17 @@
         flex-direction: column;
         justify-content: start;
     }
+    .texte-life-computer {
+        overflow: visible;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 500; /* Nombre de lignes à afficher avant les points de suspension */
+    }
+
+
+
+
+
 
     .section3Apropos {
         background-color: var(--pink1);
