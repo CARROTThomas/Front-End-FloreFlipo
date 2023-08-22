@@ -267,7 +267,7 @@
     width: 300px;
     height: 300px;
     grid-row: 5 / 17;
-    grid-column: 27 / 31;
+    grid-column: 28 / 31;
     transform: scaleX(-1);
 }
 .containerContentVersementSection5MonCoaching {
@@ -548,6 +548,10 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
     .containerCasesObjectifs {
         width: 50%;
         margin: 0;
+    }
+    .imgDecorationTitreSection1MonCoaching {
+        grid-row: 7 / 9;
+        grid-column: 9 / 16;
     }
     .caseObjectifs {
         width: auto;
