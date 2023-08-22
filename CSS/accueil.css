@@ -22,30 +22,28 @@
 .section2Accueil {
     background-color: var(--pink1);
 }
-
-
 .containerSection2Accueil {
     display: grid;
     /* row / col */
     grid-template: repeat(16, 4em) / repeat(10, 10%);
 }
-
 .element1Section2Accueil, .element2Section2Accueil, .element3Section2Accueil {
     gap: 3em;
     display: flex;
     align-items: center;
 }
-
 .element1Section2Accueil {
     grid-column: 3 / 9;
     grid-row: 2 / 4;
 }
-
 .element2Section2Accueil {
     grid-column: 3 / 9;
     grid-row: 5 / 13;
 }
-
+.titreStrategieSection2Accueil {
+    margin: 0;
+    margin-top: .25rem;
+}
 .element3Section2Accueil {
     grid-column: 3 / 9;
     grid-row: 14 / 16;
@@ -162,6 +160,9 @@
     .element2Section2Accueil {
         grid-column: 1 / 11;
         grid-row: 4 / 12;
+    }
+    .titreStrategieSection2Accueil {
+        margin-top: -0.25rem;
     }
 
     .element3Section2Accueil {

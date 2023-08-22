@@ -69,8 +69,8 @@
     margin-left: -8em;
 }
 .iconCheckboxMC {
-    width: 75px;
-    height: 75px;
+    width: 60px;
+    height: 60px;
 }
 .containerImageSection1MonCoaching {
     width: 50%;
@@ -232,7 +232,9 @@
 }
 
 
-
+.section5MonCoaching {
+    background-color: var(--pink1);
+}
 .containerSection5MonCoaching {
     width: 100%;
     display: grid;
@@ -245,6 +247,11 @@
     justify-content: space-between;
     grid-row: 1 / 11;
     grid-column: 1 / 31;
+}
+.containerTitreSection5 {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .decorationTitreSection5MonCoaching {
@@ -418,7 +425,6 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
     width: 100px;
     border-radius: 50%;
     background-size: cover;
-    background-image: url("https://cdn.discordapp.com/attachments/907008782377300010/1087666126269448222/samurai.jpg");
 }
 .carousel-control-prev {
     left: -60px;
@@ -534,6 +540,9 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
 
 
     .containerContentCasesObjectifsImage {
+        width: 94%;
+        margin: auto;
+        margin-top: 4em;
         justify-content: space-between;
     }
     .containerCasesObjectifs {
@@ -613,6 +622,9 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
         margin-top: 5em;
         flex-direction: column;
     }
+    .containerTitreSection5 {
+        width: 90%;
+    }
     .containerContentVersementSection5MonCoaching {
         width: 100%;
         margin-top: 5em;
@@ -638,6 +650,7 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
     }
     .carteVersementMonCoaching {
         width: 100%;
+        padding: 3em 4em;
     }
     .carteVersement4MonCoaching {
         z-index: 5;

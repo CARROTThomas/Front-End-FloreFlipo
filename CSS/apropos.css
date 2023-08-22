@@ -96,8 +96,6 @@
     margin-right: -12em;
 }
 .texte-life-computer {
-    overflow: hidden;
-    display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 20; /* Nombre de lignes à afficher avant les points de suspension */
 }
