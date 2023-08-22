@@ -334,7 +334,7 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
     background-color: var(--pink3);
 }
 .sepaCarteVersementMonCoachingSelected {
-    background-color: var(--pink4);
+    background-color: var(--pink5);
 }
 .carteVersementMonCoachingSelected {
     z-index: 5;
