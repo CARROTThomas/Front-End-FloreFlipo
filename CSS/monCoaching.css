@@ -554,6 +554,7 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
         grid-column: 9 / 16;
     }
     .caseObjectifs {
+        height: 157px;
         width: auto;
         margin: 3em 0;
         padding: 1em 1em;
