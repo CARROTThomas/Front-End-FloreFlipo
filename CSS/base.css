@@ -319,7 +319,7 @@ p {
 }
 .swiper-slide{
     min-width: 30%;
-    height: 95vh;
+    height: auto;
     display: flex;
     min-height: 70%;
     max-height: 100%;
