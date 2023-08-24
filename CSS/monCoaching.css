@@ -503,7 +503,7 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
 .contentAccordionActive > .labelElementAccordion {
     background-color: var(--pink4);
 }
-.contentAccordionActive > .labelElementAccordion > .iconFlecheAccordion {
+.contentAccordionActive > .labelElementAccordion > .containerFleche> .iconFlecheAccordion {
     background-image: url("../images/ressources/accordionActive.png");
 }
 .contentAccordionActive > .labelElementAccordion > .titreLabelElementAccordion {
