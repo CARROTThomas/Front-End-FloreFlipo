@@ -352,10 +352,10 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
     width: 100%;
     display: grid;
     /* row / col */
-    grid-template: repeat(18, 1fr) / repeat(32, 1fr);
+    grid-template: repeat(20, 1fr) / repeat(32, 1fr);
 }
 .containerSection6MonCoaching {
-    grid-row: 2 / 19;
+    grid-row: 4 / 21;
     grid-column: 1 / 31;
     display: flex;
     align-items: end;
@@ -385,7 +385,7 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
 }
 .carteTemoignage {
     width: 90%;
-    height: 23em;
+    height: 27em;
     display: flex;
     border-radius: 25px;
     align-items: center;
@@ -399,7 +399,7 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
 }
 .txtContentAvis {
     width: 180%;
-    height: 11em;
+    height: 15em;
     color: var(--grey);
     overflow: auto;
 }
@@ -439,7 +439,7 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
 }
 .carousel-indicators {
     gap: .5em;
-    top: 370px;
+    top: 440px;
 }
 .carousel-indicators > button[data-bs-target="#carouselExampleCaptions"] {
     width: 0;
@@ -665,7 +665,7 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
 
 
     .carteTemoignage {
-        height: 45em;
+        height: 64em;
     }
     .containerGridSection6MonCoaching {
         display: block;
@@ -683,6 +683,9 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
         align-items: center;
         justify-content: center;
     }
+    .txtContentAvis {
+        height: 19em;
+    }
     .containerContentAvisSection6MonCoaching {
         width: 100%;
         justify-content: center;
@@ -695,7 +698,7 @@ input:checked + .buttonToggleSection5PageMonCoaching::before {
     }
     .carousel-indicators {
         gap: 1.5em;
-        top: 785px;
+        top: 1050px;
     }
     .carousel-caption {
         bottom: -0.6rem;
